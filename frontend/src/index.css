@@ -1,0 +1,447 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lexend+Exa:wght@100..900&family=Style+Script&display=swap');
+
+:root {
+  --primary: #12113b; 
+  --secondary: #000000;
+  --error: #000000;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+/* Navbar */
+header {
+  background: var(--primary);
+}
+
+/* Navbar Styles */
+header {
+  background: var(--primary);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure space between elements */
+  padding: 10px 20px;
+  background-color: #12113b; /* Dark background color */
+  color: #ffffff; /* White text color */
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from parent */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  margin-left: -210px;
+  
+}
+.tagline-container {
+  margin-left: 64px; 
+  margin-top: -25px;
+  
+}
+
+.tagline {
+  margin: 0;
+  font-size: 12px;
+  color: #ffffff; 
+  margin-left: 7%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ffffff; 
+  border-radius: 5px;
+  background-color: transparent; 
+  color: #ffffff; 
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ffffff; 
+  color: #12113b; 
+  cursor: pointer;
+  margin-top: -13px;
+  font-weight: bold;
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+  padding: 4%;
+  
+}
+
+.goal-details {
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  color: white;
+}
+
+.goal-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.goal-details p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.goal-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: var(--secondary);
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+
+.goal-details p.completed {
+  margin: 10px 0;
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 0.9em;
+}
+.goal-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.completed-status {
+  margin-top: 4%;
+  align-self: flex-end; /* Align to the bottom */
+}
+
+.edit-icon {
+  width: 2%;
+  background: none;
+  margin-right: 30px;
+}
+
+.delete-icon {
+  width: 2%;
+  background: none;
+}
+
+.grayed {
+  color: #777; /* Use the desired gray color */
+}
+.blued {
+  color: #141950; /* Use the desired gray color */
+}
+.update-buttons button{
+  border: none;
+  border-radius: 15px;
+  margin-bottom:5%;
+  font-size: 13px;
+  width: 80%;
+  font-family: "Poppins";
+}
+.update-button{
+  margin-top: 5%;
+  background-color:#141950;
+  color: white;
+}
+.goals-update {
+  margin: 10px 0;
+  padding: 8px 16px;
+  background-color: white; /* Black */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 0.9em;
+  color: var(--primary); /* Yellow */
+  display: flex;
+}
+
+.goals-update input {
+  width: 50%;
+  margin-right: 5%;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal.open {
+  display: block;
+}
+
+.modal-content {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.modal-content button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #141950;
+  justify-content: center;
+}
+
+.modal-content button:first-child {
+  background-color: white;
+  color: #141950;
+  margin-right: 10px;
+}
+
+.modal-content button:last-child {
+  background-color: #ddd;
+}
+
+.completed-status input[type="checkbox"] {
+  margin-right: 5px; 
+}
+
+.completed-status {
+  display: flex;
+  align-items: center; 
+}
+
+.completed-status label {
+  margin-left: 5px; 
+}
+
+
+/* css for validation modal in completion status */
+.toggle-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.toggle-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.toggle-modal-content p {
+  color: black
+}
+
+.toggle-modal-content button {
+  margin-top: 5%;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 20%;
+  border:rgba(0, 0, 0, 0.15);
+  padding: 5px;
+}
+
+.yes {
+  background-color: #12113b;
+  color: white;
+  margin-right: 4%;
+}
+.completed-button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.completed.grayed {
+  background-color: #ccc;
+}
+
+.completed.blued {
+  background-color: #000000;
+  color: white;
+}
+
+.completed:hover {
+  opacity: 0.8;
+}
+
+/* Other styles */
+/* Add your other styles here */
+
+.suggestions {
+  margin-top: 20px;
+}
+
+.suggestions h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.suggestions ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0;
+}
+
+.suggestions li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.suggestions li svg {
+  margin-right: 10px; /* Add spacing between icon and text */
+  color:  #12113b; /* Change icon color */
+}
+
+.error {
+  color: #ff0000; /* Change error message color */
+}
+
+.quote-card {
+  background-color: #eaecef; 
+  border: 2px solid  #12113b; 
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  position: relative; 
+  text-align: center;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 24px;
+  color: #ffcc66; /* Yellow color for the quote icon */
+}
+
+.under-construction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically within the viewport */
+  background-color: #f2f2f2; /* Set background color */
+}
+
+.under-construction {
+  text-align: center;
+  padding: 20px;
+}
+
+.under-construction img {
+  width: 60%;/* Adjust size as needed */
+  height: auto;
+  margin-bottom: 2px; /* Add some space below the image */
+}
+
+
